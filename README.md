@@ -1,7 +1,6 @@
 # Pompon
 
 A theme for [Hexo]. 
-Forked from: https://github.com/hexojs/hexo-theme-landscape
 
 ## Installation
 
