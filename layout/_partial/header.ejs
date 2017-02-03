@@ -17,11 +17,10 @@
         <% for (var i in theme.menu){ %>
           <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
         <% } %>
+          <!-- <a class="main-nav-link" href="<%- url_for('/categories') %>">目录</a>
+          <a class="main-nav-link" href="<%- url_for('/tags') %>">标签</a> -->
       </nav>
       <nav id="sub-nav">
-        <% if (theme.rss){ %>
-          <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="<%= __('rss_feed') %>"></a>
-        <% } %>
         <% if (theme.weibo){ %>
           <a id="nav-weibo-link" class="nav-icon" href=<%- theme.weibo %>" target="_blank">
             <i class="fa fa-fw fa-weibo"></i>
@@ -31,6 +30,9 @@
           <a id="nav-bilibili-link" class="nav-icon" href=<%- theme.bilibili %>" target="_blank">
             <i class="fa fa-fw fa-video-camera"></i>
           </a>
+        <% } %>
+        <% if (theme.rss){ %>
+          <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="<%= __('rss_feed') %>"></a>
         <% } %>
         <!-- <a id="nav-search-btn" class="nav-icon" title="<%= __('search') %>"></a> -->
       </nav>
