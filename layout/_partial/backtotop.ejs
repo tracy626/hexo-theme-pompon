@@ -1,0 +1,34 @@
+<script type="text/javascript">
+	window.onload = function(){
+	 	var oTop = document.getElementById("backtotop")
+	 	var scrollTop = 0
+	 	var clientHeight = 0
+	 	var isTop = true
+
+
+	 	window.onscroll = function(){
+	 		//console.log(document.body.scrollTop)
+	 		if(!isTop){
+	 			//console.log('display the button!!!')
+	 			oTop.style.display = "block"
+	 		}
+	 		//isTop = false
+	 		if(document.body.scrollTop > 0){
+	 			isTop = false
+	 		}else{
+	 			isTop = true
+	 			oTop.style.display = "none"
+	 		}
+		}
+
+		oTop.onclick = function(){
+			document.documentElement.scrollTop = document.body.scrollTop =0
+			//console.log('top now!!!')
+			oTop.style.display = "none"
+			isTop = true
+		}
+	}
+</script>
+<div id="backtotop">
+   <i class="fa fa-arrow-up"></i>
+</div>
