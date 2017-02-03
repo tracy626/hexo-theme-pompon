@@ -1,0 +1,29 @@
+.cate-wrap
+  min-height: 100px
+  margin-bottom: block-margin !important
+  @media mq-normal
+    column(main-column)
+
+.cate-title
+  color: #555
+  text-transform: uppercase
+  letter-spacing: 2px
+  margin-bottom: .5em
+  text-align: center
+  font-size: 2.5em
+  font-weight: bold
+
+.cate
+  color: color-grey
+  ul, ol
+    li
+      display: inline-block
+      zoom:1
+      *display:inline
+      padding-right: .75em
+/* Having problems getting balanced white space between items
+    li:before
+      content: " | "
+    li:first-child:before
+      content: none
+ */
