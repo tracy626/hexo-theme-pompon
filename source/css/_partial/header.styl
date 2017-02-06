@@ -2,12 +2,13 @@
   height: 500px
   position: relative
   border-bottom: 1px solid color-border
+  overflow: hidden
   &:before, &:after
     content: ""
     position: absolute
     left: 0
     right: 0
-    height: 40px
+    height: 20px
   &:before
     top: 0
     background: linear-gradient(rgba(0, 0, 0, 0.2), transparent)
@@ -22,16 +23,6 @@
 #header-inner
   position: relative
   overflow: hidden
-
-#banner
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background: url(banner-url) center #000
-  background-size: cover
-  z-index: -1
 
 #header-title
   text-align: center
@@ -166,3 +157,53 @@ $nav-link
   cursor: pointer
   &:hover, &:focus
     color: #777
+
+.slideshow-container
+  margin: auto
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: -1
+
+.mySlides
+  display: none
+
+/* 淡出动画 */
+.fade
+  -webkit-animation-name: fad
+  -webkit-animation-duration: 1.5s
+  animation-name: fade
+  animation-duration: 1.5s
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.dots
+  margin-top: 270px
+  z-index: 2
+
+.dot
+  cursor:pointer
+  height: 13px
+  width: 13px
+  margin: 0 2px
+  background-color: color-default
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.2s ease
+  text-decoration: none
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+  @media mq-mobile
+    display: none
+
+.active, .dot:hover
+  background-color: color-grey
