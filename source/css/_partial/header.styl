@@ -159,7 +159,7 @@ $nav-link
     color: #777
 
 .slideshow-container
-  margin: auto;
+  margin: auto
   position: absolute
   top: 0
   left: 0
@@ -168,14 +168,14 @@ $nav-link
   z-index: -1
 
 .mySlides
-  max-height: banner-height
+  display: none
 
 /* 淡出动画 */
 .fade
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+  -webkit-animation-name: fad
+  -webkit-animation-duration: 1.5s
+  animation-name: fade
+  animation-duration: 1.5s
  
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -186,3 +186,24 @@ $nav-link
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.dots
+  margin-top: 230px
+  z-index: 2
+
+.dot
+  cursor:pointer
+  height: 13px
+  width: 13px
+  margin: 0 2px
+  background-color: color-default
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.2s ease
+  text-decoration: none
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+  @media mq-mobile
+    display: none
+
+.active, .dot:hover
+  background-color: color-grey
