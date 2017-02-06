@@ -33,7 +33,8 @@ body
 
 .outer
   clearfix()
-  //min-height: 44.9%
+  @media mq-mobile
+    min-height: 52%
   max-width: (column-width + gutter-width) * columns + gutter-width
   margin: 0 auto
   padding: 0 gutter-width

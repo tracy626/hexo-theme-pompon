@@ -22,7 +22,7 @@ Also, need to add `bilibili.js` in `\node_modules\hexo\lib\plugins\tag`
 function bilibiliTag(args, content) {
   var id = args[0];
 
-  return '<div class="video-container"><embed width="750" height="624" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" src="http://share.acg.tv/flash.swf?aid=' + id + '&amp;page=1" type="application/x-shockwave-flash" quality="high" wmode="transparent" menu="false" allowfullscreen="true" flashvars="autostart=false"></div>';
+  return '<div class="video-container"><embed width="750" height="624" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" src="http://static.hdslb.com/miniloader.swf?aid=' + id + '" type="application/x-shockwave-flash" quality="high" wmode="transparent" menu="false" allowfullscreen="true" flashvars="autostart=false"></div>';
 }
 
 module.exports = bilibiliTag;
