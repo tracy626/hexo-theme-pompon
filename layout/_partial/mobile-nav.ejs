@@ -2,4 +2,14 @@
   <% for (var i in theme.menu){ %>
     <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
   <% } %>
+  <% if (theme.weibo){ %>
+    <a class="mobile-nav-icon" href=<%- theme.weibo %>" target="_blank">
+      <i class="fa fa-fw fa-weibo"></i>
+    </a>
+  <% } %>
+  <% if (theme.bilibili){ %>
+    <a class="mobile-nav-icon" href=<%- theme.bilibili %>" target="_blank">
+      <i class="fa fa-fw fa-video-camera"></i>
+    </a>
+  <% } %>
 </nav>

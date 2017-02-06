@@ -19,20 +19,56 @@
       color: #fff
 
 @media mq-mobile
+  .mobile-nav-icon
+    display: block
+    color: color-grey
+    text-decoration: none
+    padding: 15px 20px
+    font-weight: bold
+    &:hover
+      color: #fff
+
+@media mq-mobile
   #header
-    height: 200px
+    height: 110px
+
+@media mq-tablet
+  #header
+    height: 230px
+
+@media mq-tablet
+  #logo
+    @extend $logo-text
+    font-size: 40px
+    letter-spacing: 2px
+
+@media mq-tablet
+  #subtitle
+    @extend $logo-text
+    font-size: 22px
+    letter-spacing: 1px
+    opacity: 0.7
+    &:hover
+      opacity: 1
+
+@media mq-tablet
+  #subtitle-wrap
+    margin-top: 0
 
 @media mq-mobile
   #logo
     @extend $logo-text
-    font-size: logo-size
-    line-height: logo-size
+    font-size: 25px
     letter-spacing: 2px
 
+@media mq-mobile
+  #subtitle-wrap
+    margin-top: -12px
+
+@media mq-mobile
   #subtitle
     @extend $logo-text
-    font-size: subtitle-size
-    line-height: subtitle-size
+    font-size: 14px
     letter-spacing: 1px
     opacity: 0.7
     &:hover
