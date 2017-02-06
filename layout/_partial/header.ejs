@@ -3,20 +3,25 @@
     <div class="mySlides fade">
       <img src="/css/images/banner5.jpg" style="width:100%">
     </div>
-   
+
     <div class="mySlides fade">
       <img src="/css/images/banner1.jpg" style="width:100%">
-    </div>
-   
-    <div class="mySlides fade">
-      <img src="/css/images/banner2.jpg" style="width:100%">
     </div>
 
     <div class="mySlides fade">
       <img src="/css/images/banner3.jpg" style="width:100%">
     </div>
+
+    <div class="mySlides fade">
+      <img src="/css/images/banner9.jpg" style="width:100%">
+    </div>
+
     <div class="mySlides fade">
       <img src="/css/images/banner4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/css/images/banner11.jpg" style="width:100%">
     </div>
   </div>
   <div id="header-outer" class="outer">
@@ -62,6 +67,7 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
       </div>
     </div>
   </div>
@@ -77,14 +83,14 @@
   function currentSlide(n) {
     var i;
     slideIndex = n;
-    
+
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+        slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block"; 
+    slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
 
@@ -97,7 +103,7 @@
     slideIndex++;
     if (slideIndex> slides.length) {
       slideIndex = 1
-    } 
+    }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active"
     setTimeout(showSlides, 2500);
