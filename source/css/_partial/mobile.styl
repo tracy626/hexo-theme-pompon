@@ -17,3 +17,23 @@
     font-weight: bold
     &:hover
       color: #fff
+
+@media mq-mobile
+  #header
+    height: 200px
+
+@media mq-mobile
+  #logo
+    @extend $logo-text
+    font-size: logo-size
+    line-height: logo-size
+    letter-spacing: 2px
+
+  #subtitle
+    @extend $logo-text
+    font-size: subtitle-size
+    line-height: subtitle-size
+    letter-spacing: 1px
+    opacity: 0.7
+    &:hover
+      opacity: 1

@@ -1,5 +1,4 @@
 .cate-wrap
-  min-height: 100px
   margin-bottom: block-margin !important
   @media mq-normal
     column(main-column)
@@ -14,6 +13,9 @@
   font-weight: bold
 
 .cate
+  text-align: center
+  padding: 5% 0
+  font-size: 18px
   color: color-grey
   ul, ol
     li
@@ -21,6 +23,12 @@
       zoom:1
       *display:inline
       padding-right: .75em
+  a
+    margin-right: 5px
+    display: inline-block
+    color: color-link3
+    &:hover
+      color: color-link2
 /* Having problems getting balanced white space between items
     li:before
       content: " | "
