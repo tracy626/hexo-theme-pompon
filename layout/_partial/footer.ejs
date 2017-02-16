@@ -4,9 +4,9 @@
   <% } %>
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> <i class="fa fa-<%- theme.authoricon %>"></i>
-  	  <%= config.author || config.title %><br>
-      <a href="http://hexo.io/" target="_blank">Hexo</a> <%= __('powered_by') %>
+      Copyright &copy; <%= date(new Date(), 'YYYY') %> 
+  	  <%= config.author || config.title %>. All rights reserved.<br>
+      <a href="http://hexo.io/" target="_blank">Hexo</a> <a href="/"><i class="fa fa-<%- theme.authoricon %>"></i> <%= __('powered_by') %></a>
     </div>
   </div>
 </footer>
